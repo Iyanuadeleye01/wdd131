@@ -1,0 +1,172 @@
+:root {
+--primary-color: #fff;
+--secondary-color: rgb(29, 76, 115);
+--accent1-color: #000;
+--accent2-color: yellow;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 900px;
+    margin: 0 auto;
+}
+
+h1,h2 {
+    font-weight: 100;
+}
+.head-tile {
+    background-color: var(--secondary-color);
+    text-align: center;
+    align-content: center;
+}
+
+#course-title {
+    color: #fff;
+    font-size: large;
+}
+#my-name {
+    color: var(--accent2-color);
+    font-size: small;
+}
+
+.header-link ul {
+    display: flex;
+    background-color: var(--accent1-color);
+    margin-top: 0;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+}
+.header-link a {
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: none;
+}
+.card-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5em;
+    width: 870px;
+    margin: 0 auto;
+}
+.card1 {
+    display: grid;
+    background-color: var(--primary-color);
+    border-radius: 0.5em;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+.card1 h1 {
+    background-color: var(--secondary-color);
+    margin-top: 0;
+    text-align: center;
+    font-size: large;
+    align-content: center;
+    height: 2.5em;
+    color: var(--primary-color);
+}
+.card1-child p {
+    padding: 0.5em;
+    padding-right: 100px;
+}
+.card1-child {
+    position: relative;
+
+}
+.card1-child img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.card1-child2 p {
+    padding: 0.5em;
+    padding-left: 200px;
+    margin-bottom:120px;
+}
+.card1-child2 {
+    position: relative;
+}
+.card1-child2 img {
+    position: absolute;
+    bottom: 5em;
+    left: 1em;
+    margin-bottom: 100px;
+}
+
+
+.card1-child2 figcaption {
+  position: absolute;
+  bottom: 4em;
+  left: 0;
+  font-size: 0.8em;
+  padding: 2px 5px;
+  margin-bottom: 90px;
+}
+.card1-child2 h2 {
+    text-align: center;
+    text-decoration: none;
+}
+
+#country-id {
+  position: relative;
+  display: inline-block; 
+  margin: 2em auto;
+  padding-bottom: 0.2em;
+}
+
+#country-id::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 120%; 
+  height: 2px;
+  background-color: rgb(211, 198, 198);
+}
+
+
+
+.card2 h1 {
+    background-color: var(--secondary-color);
+    font-size: large;
+    margin-top: 0;
+    text-align: center;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    height: 2.5em;
+    align-content: center;
+    color: var(--primary-color);
+    
+}
+.card2 {
+    border: 1px solid gray;
+    border-radius: 0.5em;
+}
+.card2 ul {
+    margin: 10em 0.5em;
+}
+.card2 a {
+    text-decoration: underline;
+}
+
+.footer-content {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1px;
+    margin-top: 1em;
+    color: var(--primary-color);
+}
+#lastmodified {
+    color: var(--accent2-color);
+    font-size: small;
+}
