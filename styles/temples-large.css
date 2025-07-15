@@ -1,0 +1,36 @@
+
+
+/* Navigation */
+nav {
+  background-color: #36454f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline double;
+  background-color: #eee;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
+  padding: 0.8rem;
+  text-align: center;
+}
