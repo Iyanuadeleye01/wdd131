@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
     
 }
 .container {
-    width: 700px;
+    /* width: 700px; */
     margin: 0 auto;
 }
 :root {
@@ -31,20 +31,57 @@ body {
     padding: 1rem;
     margin:0;
 }
-  nav ul {
-    display: flex;
-    list-style: none;
-
- } 
- nav a {
+#menu {
     display: block;
-    text-align: center;
-    padding: 1rem;
+    font-size: 2rem;
     text-decoration: none;
+    padding: 0.5rem 0.75rem;
     background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 760px;
+
+ }
+ nav ul li {
+    display: none;
+ }
+ .navigation a {
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    text-decoration: none;
     color:var(--accent2-color);
+
     
 }
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+.show ul li {
+    display: block;
+}
+
 h1{
     font-size: medium;
     padding: 2px;
@@ -53,16 +90,21 @@ main {
     text-align: center;
     border: 1px solid black;
 }
-main .fig-image {
+.fig-image {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     gap: 0.5rem;
     padding: 0.5rem;
     
 }
+
+.fig-image {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 footer {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
     padding: 1rem;
 }
-

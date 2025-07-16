@@ -1,36 +1,31 @@
-
-
-/* Navigation */
-nav {
-  background-color: #36454f;
+@media only screen and (min-width:40em) {
+  .active p {
+    text-align: center;
+    padding: 1rem;
+    margin:0;
 }
+
+.fig-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
 
 nav ul {
-  list-style: none;
   display: flex;
-  flex-direction: column;
-  padding: 0;
 }
 
-nav a {
+nav ul  li {
   display: block;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  text-decoration: none;
-  font-size: 1.1rem;
+  flex: 1 1 100%;
 }
 
-nav a:hover {
-  text-decoration: underline double;
-  background-color: #eee;
-  color: #000;
+nav ul li a {
+  text-align: center;
 }
 
-/* Footer */
-footer {
-  background-color: var(--secondary-color);
-  color: var(--accent2-color);
-  padding: 0.8rem;
-  text-align: center;
+#menu {
+  display: none;
+}
 }
