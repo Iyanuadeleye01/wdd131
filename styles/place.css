@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --primary-color: #35FF69;
+    --secondary-color: #fff;
+    --accent1-color: #44CCFF;
+    --accent2-color: #000;
+}
+
+body {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    background-color: var(--secondary-color);
+   
+
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+.container h1 {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.container footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.data {
+    border-bottom: 1px solid rgb(230, 228, 228);
+    text-align: center;
+}
+
+.data li {
+    list-style: none;
+}
+
+.data ul {
+    padding: 1rem;
+    text-align: center;
+}
+
+.data h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather li {
+    list-style: none;
+}
+
+.weather ul {
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.weather h2 {
+    padding: 1rem;
+}
+
+.icon {
+    padding: 0;
+}
+
+.hero picture img {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding-bottom: 0.5rem;
+}
+
+@media only screen and (min-width:768px) {
+
+    .wrapper {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        background-color: var(--secondary-color);
+        color: var(--accent2-color);
+    }
+
+    .weather {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        background-color: var(--secondary-color);
+        color: var(--accent2-color);
+    }
+
+    .weather h2 {
+        background-color: var(--primary-color);
+        color: var(--accent2-color);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin-left: -60px;
+        border-radius: 0 6px 6px 0;
+        margin-top: 0.5rem;
+        
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+    }
+    .data h2 {
+        background-color: var(--primary-color);
+        color: var(--accent2-color);
+        margin-left: -70px;
+        padding: 0.5rem 1rem;
+        border-radius: 0 6px 6px 0;
+        display: inline-block;
+        width: 12rem;
+        margin-top: 0.5rem;
+    }
+}
