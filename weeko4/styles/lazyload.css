@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    width: 400px;
+ }
+h1 {
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: block;
+
+}
+
+img {
+    width: 100%;
+    background-color: aqua;
+    animation: fade 15s;
+}
+footer {
+    text-align: center;
+    background-color: aqua;
+    color: black;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

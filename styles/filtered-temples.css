@@ -1,0 +1,186 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    
+}
+.container {
+    margin: 0 auto;
+}
+:root {
+    --primary-color: #3F8EFC;
+    --secondary-color: #87BFFF;
+    --accent1-color: #fff;
+    --accent2-color: #000;
+}
+
+.active {
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: space-between;
+
+}
+.active p {
+    text-align: center;
+    padding: 1rem;
+    margin:0;
+}
+#menu {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 760px;
+
+ }
+ nav ul li {
+    display: none;
+ }
+ .navigation a {
+    display: block;
+    text-align: left;
+    padding: 1rem;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    text-decoration: none;
+    color:var(--accent2-color);
+
+    
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+.show ul li {
+    display: block;
+}
+
+h1{
+    font-size: medium;
+    padding: 2px;
+}
+main {
+    text-align: center;
+    border: 1px solid black;
+}
+.fig-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    
+}
+
+.fig-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+
+}
+.fig-image section {
+    background-color: #f8f5f5;
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    padding: 1rem;
+}
+
+@media only screen and (max-width:450px) {
+    
+    .fig-image section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #f8f5f5;
+    }
+    
+    .fig-image img {
+        height: 180px;
+        width: 100%;                           
+                  
+        }
+    }
+
+
+@media only screen and (min-width:40em){
+
+.active p {
+    text-align: center;
+    padding: 1rem;
+    margin:0;
+}
+
+.fig-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+  }
+
+nav ul {
+  display: flex;
+}
+
+nav ul  li {
+  display: block;
+  flex: 1 1 100%;
+}
+
+nav ul li a {
+  text-align: center;
+}
+
+#menu {
+  display: none;
+}
+.fig-image img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+}
+
+.fig-image section {
+    background-color: #f8f5f5;
+}
+
+footer {
+    text-align: center;
+}
+}
+    
+
