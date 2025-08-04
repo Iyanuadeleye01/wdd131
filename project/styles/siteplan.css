@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-colour: #80CED7;
+    --secondary-colour: #007EA7;
+    --accent1-colour: #003249;
+    --accent2-colour: #CCDBDC;
+    --accent3-colour: #9AD1D4;
+}
+body {
+    background-color: #f0f0f0;
+}
+.web-design {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--secondary-colour);
+    color: var(--accent1-colour);
+    
+}
+
+h1, h2 {
+text-align: center;
+}
+ul {
+    list-style: none;
+}
+
+.site-design {
+    display: grid;
+}
+.site-name {
+    background-color: var(--accent2-colour);
+    color: var(--accent1-colour);
+    border: 1px solid black;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+.purpose {
+    background-color: var(--accent3-colour);
+    color: var(--accent1-colour);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+.scenarios {
+    background-color: var(--primary-colour);
+    color: var(--accent1-colour);
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+.colour {
+    background-color: var(--accent3-colour);
+    color: var(--accent1-colour);
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.topography {
+    background-color: var(--accent2-colour);
+    color: var(--accent1-colour);
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.image {
+    background-color: var(--accent3-colour);
+    color: var(--accent1-colour);
+    padding: 1rem;
+    border: 1px;
+    border-radius: 0.5rem;
+    
+}
+.image img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
