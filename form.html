@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iyanu Adeleye | WDD 131">
+    <meta name="description" content="This is a website form design fundamentals">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Product Review</h1>
+    <form action="review.html" method="get">
+        <div class="product">
+            <label for="productName">Product Name</label>
+            <select name="productName" id="productName" required>
+                <option value="" disabled selected>Select a Product</option>
+            </select>
+        </div>
+        <div class="rating">
+            <div class="overall">Overall Rating</div>
+            <div class="stars">
+                <label data-stars="1">
+                    <span class="star-display"></span>
+                    <input type="radio" name="rating" value="1">
+                </label>
+                <label data-stars="2">
+                    <span class="star-display"></span>
+                    <input type="radio" name="rating" value="2">
+                </label>
+                <label data-stars="3">
+                    <span class="star-display"></span>
+                    <input type="radio" name="rating" value="3">
+                </label>
+                <label data-stars="4">
+                    <span class="star-display"></span>
+                    <input type="radio" name="rating" value="4">
+                </label>
+                <label data-stars="5">
+                    <span class="star-display"></span>
+                    <input type="radio" name="rating" value="5">
+                </label>
+
+            </div>
+        </div>
+        <div class="date">
+            <label for="date">Date of Installation</label>
+            <input type="date" name="date" id="date" required>
+        </div>
+
+        <div class="feature">
+            <div>Which features did you find useful in the product? </div>
+            <small>(Check all that aaply)</small> <br>
+            <label><input type="checkbox" name="design" id="design" value="design">Design</label>
+            <label><input type="checkbox" name="durability" id="durability" value="durability">
+                Durability</label>
+
+            <label><input type="checkbox" name="use" id="use" value="use">
+                Ease of Use</label>
+            <label><input type="checkbox" name="performance" id="performance"
+                    value="performance">Performance</label>
+        </div>
+        <div class="review">
+            <label for="review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea name="review" id="review"></textarea>
+
+        </div>
+        <div class="name">
+            <label>Your Name<span class="optional2">(Optional)</span> <br><input type="text" name="name" id="name" value=""></label>
+        </div>
+        <div class="post">
+            <input type="submit" name="submit" id="submit" value="Post Review">
+        </div>
+
+    </form>
+    <footer>
+        <p>© <span id="currentyear"></span> 🌴Iyanu Adeleye 🌴 Nigeria</p>
+        <p><span id="lastmodified"></span></p>
+    </footer>
+
+</body>
+
+</html>
