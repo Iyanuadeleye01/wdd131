@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join NaijaFixIt and showcase your skills to people looking for trusted local services. Whether you are an electrician, plumber, tailor, or offer other valuable services, this is your place to connect with customers nearby.">
+    <meta name="author" content="Iyanu Adeleye">
+    <title>NaijaFixIt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="NaijaFixIt Logo" width="40" height="40" loading="lazy">
+                    <h1> Welcome to NaijaFixIt</h1>
+
+                </a>
+                <a id="menu" href="#"></a>
+            </div>
+            <nav>
+                <div class="website-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html"> About</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="form-heading">
+                    <h2> Register as an Artisan</h2>
+                </div>
+                <form action="" method="post">
+
+                    <div class="registration-form">
+                        <div class="personal-info">
+                            <label for="name">Full Name </label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="services-type">
+                            <label for="service">Service Type</label>
+                            <select name="service" id="service" required>
+                                <option value="">--Select Service--</option>
+                                <option value="carpenter">Carpenter</option>
+                                <option value="electrician">Electrician</option>
+                                <option value="mechanic">mechanic</option>
+                                <option value="tailor">Tailor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="other-info">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" name="location" placeholder="City/Area" required>
+
+                            <label for="experience">Years of Experience:</label>
+                            <input type="number" id="experience" name="experience" min="0" required>
+
+                            <label for="description">Brief Description of Your Services</label>
+                            <textarea name="description" id="description"
+                                placeholder="Describe your services.."></textarea>
+                        </div>
+                        <div class="registration-button">
+                            <button type="submit">Join Now</button>
+                        </div>
+                    </div>
+
+
+                </form>
+            </section>
+            <footer>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="register.html">Register</a>
+                    
+                </div>
+                <div class="copyright">
+                    <p>© <span id="currentyear"></span> 🌴Iyanu Adeleye 🌴 Nigeria</p>
+                    <p><span id="lastmodified"></span></p>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>

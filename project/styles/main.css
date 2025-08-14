@@ -1,0 +1,418 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-colour: #68f1de;
+    --secondary-colour: #007EA7;
+    --accent1-colour: #003249;
+    --accent2-colour: #CCDBDC;
+    --accent3-colour: #86dbd6;
+}
+
+body {
+    background-color: #fff;
+}
+.container {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    max-width: 650px;
+    margin: 0 auto;
+    
+    
+}
+
+header {
+    background-color: var(--primary-colour);
+    color: var(--accent1-colour);
+    margin-bottom: 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 7rem; 
+    text-decoration: none;
+    
+    
+}
+
+.website-links ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    
+
+}
+.website-links li a {
+    text-decoration: none;
+    color: var(--accent1-colour);
+    text-align: center;
+    
+}
+
+.website-links li a:hover {
+    color: var(--secondary-colour);
+}
+.website-links li {
+    list-style: none;
+    margin-right: 5px;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    
+}
+
+#menu {
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.4rem 0.5rem;
+    background-color: var(--accent3-colour);
+    color: var(--accent1-colour);
+}
+
+#menu::before {
+    content: "≡";
+}
+#menu.show::before {
+    content:  "X";
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent3-colour);
+    color: var(--accent1-colour);
+    margin-top: 2px;
+    gap: 10px;
+    margin-top: 0;
+   
+}
+
+.search-wrapper {
+    position: relative;
+}  
+
+.search-wrapper .search-icon {
+    position: absolute;
+    padding: 8px;
+    transform: translateY(20%);
+}
+
+.search-wrapper input[type="search"] {
+    padding: 8px 8px 8px 55px;
+    width: calc(100% - 10px);
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: var(--accent2-colour);
+    color: var(--accent1-colour);
+    margin: 5px;
+    
+
+}
+
+form button[type="submit"] {
+    padding: 2px;
+    width: 200px;
+    height: 44px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.featured-services {
+    background-color: var(--accent3-colour);
+    color: var(--accent1-colour);
+    padding: 10px 5px 10px 5px;
+    margin-bottom: 0;
+    
+}
+
+.featured-services h2 {
+    text-align: center;
+}
+.featured-services ul {
+    padding: 10px;
+    
+    
+}
+
+.featured-services li {
+    list-style: none;
+    padding: 5px;
+    background-color: #b4e2e7;
+    color: var(--accent1-colour);
+    
+}
+
+.needed-services {
+    background-color: var(--accent3-colour);
+    color: var(--accent1-colour);
+}
+
+.needed-services h3 {
+    text-align: center;
+    
+}
+
+.needed-services p {
+    margin: 5px;
+    padding-right: 5px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.badge-logo {
+    display: flex;
+    background-color: var(--accent3-colour);
+    color: var(--accent1-colour);
+    align-items: center;
+    gap: 1rem;
+    padding: 5px;
+    
+    
+}
+.badge {
+   font-size: 1.5rem;
+}
+.trusted-artisans {
+    margin: 0;
+    padding: 1rem;
+}
+
+
+
+footer {
+    background-color: var(--primary-colour);
+    color: var(--accent1-colour);
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 10px;
+    flex-wrap: wrap; 
+}
+
+.footer-links a {
+    color: var(--accent1-colour);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-colour);
+}
+
+.copyright {
+    font-size: 0.85rem;
+    opacity: 0.9;
+} 
+
+
+/* --- Desktop View --- */
+#menu {
+    display: none; 
+}
+
+.website-links ul {
+    display: flex; 
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+
+/* --- Mobile View --- */
+@media screen and (max-width: 425px) {
+    #menu {
+        display: block; 
+        cursor: pointer;
+    }
+
+    .website-links {
+        display: none; 
+        background-color: var(--accent3-colour);
+        padding: 1rem;
+    }
+
+    .website-links.show {
+        display: block; 
+    }
+
+    .website-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .website-links li {
+        text-align: center;
+    }
+}
+
+/* About Page Styling */
+.page-description, 
+.mission, 
+.direction, 
+.features, 
+.job-categories, 
+.register-action {
+    background-color: var(--accent3-colour);
+    color: var(--accent1-colour);
+    padding: 15px;
+   
+}
+
+/* Headings inside sections */
+.page-description h2,
+.mission h2,
+.direction h3,
+.features h4,
+.job-categories h4 {
+    color: var(--accent1-colour);
+    text-align: center;
+}
+
+.page-description p,
+.direction p {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+
+.mission ul,
+.features ul,
+.job-categories ul {
+    margin-left: 20px;
+    padding-left: 10px;
+    background-color: rgb(186, 228, 222);
+}
+
+.mission li,
+.features li,
+.job-categories li {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+
+.register-action {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--accent3-colour);
+}
+
+.about-badge {
+    font-size: 1.5rem;
+    color: var(--accent1-colour);
+    background-color: var(--secondary-colour);
+    padding: 8px;
+
+}
+
+/* Register link */
+.register-action a {
+    color: var(--secondary-colour);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-action a:hover {
+    color: var(--accent1-colour);
+}
+
+
+/*  Artisan Registration Form Styling */
+.registration-form {
+    background-color: var(--accent3-colour);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-heading {
+    background-color: var(--accent3-colour);
+    color: var(--accent1-colour);
+    text-align: center;
+}
+
+.registration-form label {
+    display: block;
+    color: var(--accent1-colour);
+    margin-bottom: 5px;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--accent2-colour);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--accent2-colour);
+    color: var(--accent1-colour);
+}
+
+.registration-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Group spacing */
+.personal-info,
+.services-type,
+.other-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* Button styling */
+.registration-button {
+    text-align: center;
+}
+.registration-button button {
+    background-color: var(--secondary-colour);
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.registration-button button:hover {
+    background-color: var(--accent1-colour);
+    color: #fff;
+}
+
+
+
+ 
